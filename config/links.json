@@ -1,0 +1,43 @@
+{
+            "bookmarks" : [
+              {
+                "category": "Communicate",
+                "links": [
+                  {
+                    "name": "Discord",
+                    "url": "https://discordapp.com/"
+                  },
+                  {
+                    "name": "Gmail",
+                    "url": "http://gmail.com"
+                  },
+                  {
+                    "name": "Messages",
+                    "url": "https://messages.google.com"
+                  }
+                ]
+              },
+              {
+                "category": "Cloud",
+                "links": [
+                  {
+                    "name": "Backblaze",
+                    "url": "https://secure.backblaze.com/user_overview.htm"
+                  },
+                  {
+                    "name": "Drive",
+                    "url": "https://drive.google.com"
+                  }
+                ]
+              },
+              {
+                "category": "Dev",
+                "links": [
+                  {
+                    "name": "Github",
+                    "url": "https://github.com"
+                  }
+                ]
+              }
+            ]
+        }

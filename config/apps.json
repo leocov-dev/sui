@@ -1,0 +1,15 @@
+{
+    "apps" : [
+        {"name":"Nginx Proxy Manager","url":"10.0.1.21:81","icon":"arrow-decision"},
+        {"name":"TrueNAS","url":"10.0.1.31","icon":"nas"},
+        {"name":"Unifi","url":"unifi.ui.com/dashboard","icon":"security-network"},
+        {"name":"Plex","url":"plex.covfam.com","icon":"plex"},
+        {"name":"Torrent","url":"torrent.covfam.com","icon":"cloud-download"},
+
+        {"name":"Monoprice UM3","url":"octo1.covfam.com","icon":"printer-3d-nozzle"},
+
+        {"name":"Pi-hole","url":"pi.hole/admin","icon":"raspberry-pi"},
+        {"name":"Arcology iDRAC","url":"10.0.1.20","icon":"server-network"},
+        {"name":"TrueNAS iDRAC","url":"10.0.1.30","icon":"server-network"}
+    ]
+}

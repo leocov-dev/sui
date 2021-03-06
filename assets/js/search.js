@@ -57,67 +57,71 @@ function search(text) {
         if (text.indexOf(' ') > -1) {
             switch (option) {
                 case "am":
-                    window.location = "https://www.allmusic.com/search/all/" + subtext;
+                    openInTab("https://www.allmusic.com/search/all/" + subtext);
                     break;
                 case "d":
-                    window.location = "https://duckduckgo.com/?q=" + subtext;
+                    openInTab("https://duckduckgo.com/?q=" + subtext);
                     break;
                 case "di":
-                    window.location = "https://www.discogs.com/search/?q=" + subtext;
+                    openInTab("https://www.discogs.com/search/?q=" + subtext);
                     break;
                 case "i":
-                    window.location = "https://www.imdb.com/find?q=" + subtext;
+                    openInTab("https://www.imdb.com/find?q=" + subtext);
                     break;
                 case "m":
-                    window.location = "https://www.themoviedb.org/search?query=" + subtext;
+                    openInTab("https://www.themoviedb.org/search?query=" + subtext);
                     break;
                 case "r":
-                    window.location = "https://www.reddit.com/search?q=" + subtext;
+                    openInTab("https://www.reddit.com/search?q=" + subtext);
                     break;
                 case "q":
-                    window.location = "https://www.qwant.com/?q=" + subtext;
+                    openInTab("https://www.qwant.com/?q=" + subtext);
                     break;
                 case "so":
-                    window.location = "https://soundcloud.com/search?q=" + subtext;
+                    openInTab("https://soundcloud.com/search?q=" + subtext);
                     break;
                 case "s":
-                    window.location = "https://open.spotify.com/search/results/" + subtext;
+                    openInTab("https://open.spotify.com/search/results/" + subtext);
                     break;
                 case "t":
-                    window.location = "https://trakt.tv/search?query=" + subtext;
+                    openInTab("https://trakt.tv/search?query=" + subtext);
                     break;
                 case "tv":
-                    window.location = "https://www.thetvdb.com/search?query=" + subtext;
+                    openInTab("https://www.thetvdb.com/search?query=" + subtext);
                     break;
                 case "y":
-                    window.location = "https://www.youtube.com/results?search_query=" + subtext;
+                    openInTab("https://www.youtube.com/results?search_query=" + subtext);
                     break;
             }
         } else {
             var option = text.substr(1);
             switch (option) {
                 case "d":
-                    window.location = "https://www.dukduckgo.com";
+                    openInTab("https://www.dukduckgo.com");
                     break;
                 case "y":
-                    window.location = "https://www.youtube.com";
+                    openInTab("https://www.youtube.com");
                     break;
                 case "r":
-                    window.location = "https://reddit.com";
+                    openInTab("https://reddit.com");
                     break;
                 case "s":
-                    window.location = "https://open.spotify.com";
+                    openInTab("https://open.spotify.com");
                     break;
             }
         }
     } else if (validURL(text)) {
         if (containsProtocol(text))
-            window.location = text;
+            openInTab(text);
         else
-            window.location = "https://" + text;
+            openInTab("https://" + text);
     } else {
-        window.location = "https://www.google.com/search?q=" + text;
+        openInTab("https://www.google.com/search?q=" + text);
     }
+}
+
+function openInTab(url) {
+    window.open(url, '_blank');
 }
 
 // Source: https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url

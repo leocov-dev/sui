@@ -4,7 +4,10 @@ LABEL maintainer="Jeroen Pardon"
 
 WORKDIR /opt/html
 
-COPY . /opt/html
+COPY ./assets     /opt/html/assets/
+COPY ./favicon*   /opt/html/
+COPY ./index.html /opt/html/
+COPY ./config     /opt/html/config/
 
 EXPOSE 80
 

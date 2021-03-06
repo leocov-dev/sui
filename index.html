@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SUI</title>
+    <title>CovFam</title>
     <meta charset="utf-8">
     <meta http-equiv="Default-Style" content="">
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="icon" type="image/png" href="favicon.png"/>
     <link type="text/css" rel="stylesheet" href="./assets/css/styles.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
@@ -85,7 +86,7 @@
                             <span class="iconify icon" data-icon="mdi-{{icon}}"></span>
                         </div>
                         <div class="apps_text">
-                            <a href="https://{{url}}">{{name}}</a>
+                            <a href="http://{{url}}" target="_blank">{{name}}</a>
                             <span id="app-address">{{url}}</span>
                         </div>
                     </div>
@@ -102,7 +103,7 @@
                     <div id="links_item">
                         <h4>{{category}}</h4>
                         {{#links}}
-                            <a href="{{url}}" class="theme_color-border theme_text-select">{{name}}</a>
+                            <a href="{{url}}" class="theme_color-border theme_text-select" target="_blank">{{name}}</a>
                         {{/links}}
                     </div>
                 {{/bookmarks}}

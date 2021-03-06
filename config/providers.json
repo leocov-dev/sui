@@ -1,0 +1,6 @@
+{
+    "providers" : [
+        {"name":"Duck Duck Go","url":"https://duckduckgo.com/?q=","prefix":"/d"},
+        {"name":"Reddit","url":"https://www.reddit.com/search?q=","prefix":"/r"},
+    ]
+}

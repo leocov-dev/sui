@@ -47,7 +47,7 @@ h2, h3, h4{
 }
 
 h1{
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: 700;
 	margin-bottom: 0.5em;
 }
@@ -89,22 +89,20 @@ a:hover{
 /* FORMS */
 
 input{
-	background-color: transparent;
+	background-color: var(--color-text-pri);
+	opacity: 0.2;
 	border: 0;
 	border-bottom: thin solid var(--color-text-acc);
 	color: var(--color-text-pri);
-	font-size: 0.8em;
+	font-size: 1em;
 	height: 3.5em;
-	transition: all 0.4s ease;
+	transition: opacity 0.4s linear, background-color 0.4s linear;
 	width: 100%;
 }
 
 input:focus{
-	color-border: var(--color-text-pri);
+	background-color: var(--color-background);
 	outline: none;
-}
-
-input:focus{
 	opacity: 1;
 }
 
@@ -191,15 +189,15 @@ table a{
 /* SECTIONS */
 
 #header{
-	border-bottom: 0px solid var(--color-text-acc);
+	border-bottom: 0 solid var(--color-text-acc);
 	z-index: 1;
 }
 
 #apps_loop{
-	border-bottom: 0px solid var(--color-text-acc);
+	border-bottom: 0 solid var(--color-text-acc);
 	display: grid;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+	grid-column-gap: 0;
+	grid-row-gap: 0;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 64px;
 	padding-bottom: var(--module-spacing);
@@ -249,7 +247,7 @@ table a{
 	display: grid;
 	flex-wrap: nowrap;
 	grid-column-gap: 20px;
-	grid-row-gap: 0px;
+	grid-row-gap: 0;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
 }
@@ -352,9 +350,9 @@ table a{
 }
 
 #modal_init a{
-	bottom: 1vh;
+	bottom: 3vh;
 	color: var(--color-text-acc);
-	left: 1vw;
+	left: 96vw;
 	position: fixed;
 }
 
@@ -363,7 +361,7 @@ table a{
 }
 
 #modal-theme{
-	border-bottom: 0px solid var(--color-text-acc);
+	border-bottom: 0 solid var(--color-text-acc);
 	display: flex;
 	flex-wrap: wrap;
     margin-bottom: 2em;
