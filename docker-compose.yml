@@ -3,11 +3,6 @@ services:
   sui:
     restart: always
     build:
-      context: ./
+      context: ./sui
     networks:
       - nginx
-    ports:
-      - 4000:80
-
-networks:
-  nginx:
