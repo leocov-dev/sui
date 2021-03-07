@@ -9,6 +9,4 @@ COPY ./favicon*   /opt/html/
 COPY ./index.html /opt/html/
 COPY ./config     /opt/html/config/
 
-EXPOSE 80
-
 ENTRYPOINT [ "httpd", "-f", "-v", "-u", "1000" ]
