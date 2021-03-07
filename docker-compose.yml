@@ -3,7 +3,5 @@ version: "3.7"
 services:
   sui:
     restart: always
-    build:
-      context: ./sui
     networks:
       - nginx
